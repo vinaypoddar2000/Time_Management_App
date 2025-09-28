@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "poddarvinay32@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "timesheets": [
+    {
+      "id": "1",
+      "weekId": 1,
+      "week": "1-5 September, 2025",
+      "totalHours": 5
+    },
+    {
+      "id": "2",
+      "weekId": 2,
+      "week": "8-12 September, 2025",
+      "totalHours": 5
+    },
+    {
+      "id": "3",
+      "weekId": 3,
+      "week": "15-19 September, 2025",
+      "totalHours": 1
+    },
+    {
+      "id": "4",
+      "weekId": 4,
+      "week": "22-26 September, 2025",
+      "totalHours": 1
+    },
+    {
+      "id": "5",
+      "weekId": 5,
+      "week": "28 Sept - 1 Nov, 2025",
+      "totalHours": 4
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "name": "Project A"
+    },
+    {
+      "id": "2",
+      "name": "Project B"
+    },
+    {
+      "id": "3",
+      "name": "Project C"
+    }
+  ],
+  "entries": [
+    {
+      "id": "2",
+      "project": "Project C",
+      "type": "Testing",
+      "task": "Homescreen",
+      "hours": 7,
+      "date": "2025-09-09",
+      "weekId": "2"
+    },
+    {
+      "id": "6b12",
+      "project": "Project B",
+      "type": "Feature development",
+      "task": "task 1",
+      "hours": 30,
+      "date": "2025-09-02",
+      "weekId": "1"
+    },
+    {
+      "id": "c8b5",
+      "project": "Project B",
+      "type": "Documentation",
+      "task": "Doc",
+      "hours": 10,
+      "date": "2025-09-02",
+      "weekId": "1"
+    },
+    {
+      "id": "bd26",
+      "project": "Project A",
+      "type": "Testing",
+      "task": "test",
+      "hours": 20,
+      "date": "2025-09-28",
+      "weekId": "5"
+    },
+    {
+      "id": "0983",
+      "project": "Project B",
+      "type": "Feature development",
+      "task": "Dev",
+      "hours": 30,
+      "date": "2025-09-17",
+      "weekId": "3"
+    }
+  ]
+}

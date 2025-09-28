@@ -13,7 +13,7 @@ export default function ListView() {
 
   // 🔹 Fetch tasks
   useEffect(() => {
-    fetch(`https://api.jsonbin.io/v3/b/68d94ee6ae596e708ffed492/entries?weekId=${weekId}`)
+    fetch(`https://api.jsonmatch.com/api/json/68d95364d8654e00222e2782/entries?weekId=${weekId}`)
       .then((res) => res.json())
       .then((data) => setTasks(data))
       .catch((error) => {
@@ -72,7 +72,7 @@ export default function ListView() {
 
     if (editingTask) {
       // update - ensure weekId is preserved
-      fetch(`https://api.jsonbin.io/v3/b/68d94ee6ae596e708ffed492/entries/${editingTask.id}`, {
+      fetch(`https://api.jsonmatch.com/api/json/68d95364d8654e00222e2782/entries/${editingTask.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...task, hours: taskHours, weekId }),
@@ -93,7 +93,7 @@ export default function ListView() {
       });
     } else {
       // add - ensure weekId from params is used
-      fetch(`https://api.jsonbin.io/v3/b/68d94ee6ae596e708ffed492/entries`, {
+      fetch(`https://api.jsonmatch.com/api/json/68d95364d8654e00222e2782/entries`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...task, hours: taskHours, weekId }),
@@ -116,7 +116,7 @@ export default function ListView() {
 
   // 🔹 Delete
   const handleDelete = (id) => {
-    fetch(`https://api.jsonbin.io/v3/b/68d94ee6ae596e708ffed492/entries/${id}`, { method: "DELETE" })
+    fetch(`https://api.jsonmatch.com/api/json/68d95364d8654e00222e2782/entries/${id}`, { method: "DELETE" })
       .then((res) => {
         if (!res.ok) throw new Error('Failed to delete task');
         return refreshTasks();
@@ -128,7 +128,7 @@ export default function ListView() {
   };
 
   const refreshTasks = () => {
-    fetch(`https://api.jsonbin.io/v3/b/68d94ee6ae596e708ffed492/entries?weekId=${weekId}`)
+    fetch(`https://api.jsonmatch.com/api/json/68d95364d8654e00222e2782/entries?weekId=${weekId}`)
       .then((res) => res.json())
       .then((data) => setTasks(data))
       .catch((error) => {

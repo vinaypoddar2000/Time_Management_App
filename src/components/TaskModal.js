@@ -9,7 +9,7 @@ export default function TaskModal({ onClose, onSave, task, selectedDate }) {
 
   // 🔹 Fetch project list
   useEffect(() => {
-    fetch("https://api.jsonbin.io/v3/b/68d94ee6ae596e708ffed492/projects")
+    fetch("https://api.jsonmatch.com/api/json/68d95364d8654e00222e2782/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);

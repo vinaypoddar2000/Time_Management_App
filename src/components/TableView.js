@@ -9,8 +9,8 @@ export default function TableView() {
   useEffect(() => {
     // Fetch both timesheets and entries data
     Promise.all([
-      fetch("https://api.jsonbin.io/v3/b/68d94ee6ae596e708ffed492/timesheets").then(res => res.json()),
-      fetch("https://api.jsonbin.io/v3/b/68d94ee6ae596e708ffed492/entries").then(res => res.json())
+      fetch("https://api.jsonmatch.com/api/json/68d95364d8654e00222e2782/timesheets").then(res => res.json()),
+      fetch("https://api.jsonmatch.com/api/json/68d95364d8654e00222e2782/entries").then(res => res.json())
     ])
     .then(([timesheetsData, entriesData]) => {
       // Update timesheets with calculated totalHours from entries

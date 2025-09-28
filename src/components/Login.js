@@ -10,7 +10,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   // API base URL for your JSON server
-  const API_BASE_URL = "http://localhost:5000"; 
+  const API_BASE_URL = "https://api.jsonbin.io/v3/b/68d94ee6ae596e708ffed492"; 
 
   // Generate a dummy JWT-like token
   const generateToken = (user) => {

@@ -9,8 +9,7 @@ The project demonstrates authentication, listing weekly timesheets, and displayi
 
 1. **Clone the repository**  
    ```bash
-   git clone <your-repo-url>
-   cd <your-repo-folder>
+   git clone https://github.com/vinaypoddar2000/Time_Management_App
 
 
 Install dependencies
@@ -58,7 +57,7 @@ LocalStorage (Basic session handling for login)
 
 Authentication is mocked:
 
-Login checks against the /users endpoint (no password hashing / tokens).
+Login checks against the /users endpoint (using tokens).
 
 A valid user must exist in db.json.
 
@@ -74,12 +73,12 @@ If json-server is not running, the app will not load data.
 
 ⏱ Time Spent
 
-Project setup (React, Tailwind, Router): ~1.5 hrs
+Project setup (React, Tailwind, Router): ~2 hrs
 
-Creating mock API with json-server: ~1 hr
+Creating mock API with json-server: ~2 hr
 
 Building login, timesheet table, and list view components: ~2 hrs
 
-Testing and polish: ~0.5 hr
+Testing and polish: ~1 hr
 
-Total: ~5 hours
+Total: ~7 hours
